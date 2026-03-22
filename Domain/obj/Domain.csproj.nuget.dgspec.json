@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shahr\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj": {}
+    "C:\\Users\\shahr\\OneDrive\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shahr\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj": {
+    "C:\\Users\\shahr\\OneDrive\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahr\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\shahr\\OneDrive\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\shahr\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\shahr\\OneDrive\\Desktop\\CleanCrchitectura-Exam2\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\shahr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahr\\Desktop\\CleanCrchitectura-Exam2\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\shahr\\OneDrive\\Desktop\\CleanCrchitectura-Exam2\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shahr\\AppData\\Roaming\\NuGet\\NuGet.Config",

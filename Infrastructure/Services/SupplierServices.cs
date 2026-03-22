@@ -15,8 +15,21 @@ public class SupplierServices
 
     public void CreateSupplier(Supplier supplier)
     {
+        if (string.IsNullOrWhiteSpace(supplier.Name))
+        {
+            Console.WriteLine("Name is empty!");
+            return;
+        }
+
+        foreach (var item in suppliers)
+        {
+            if (item.Id == supplier.Id)
+            {
+                Console.WriteLine("Duplicate Id!");
+                return;
+            }
+        }
         suppliers.Add(supplier);
-        
     }
 
 
@@ -32,18 +45,26 @@ public class SupplierServices
                 return;
             }
         }
+        Console.WriteLine("Supplier not found!");
     }
 
 
-    public void DeleteProduct(int id)
+    public void DeleteSupplier(int id)
     {
+        bool isfound = false;
         foreach (var item in suppliers)
         {
             if (item.Id == id)
             {
                 suppliers.Remove(item);
+                isfound = true;
                 return;
             }
+        }
+
+        if (isfound == false)
+        {
+            Console.WriteLine("Supplier not found!");
         }
     }
 }

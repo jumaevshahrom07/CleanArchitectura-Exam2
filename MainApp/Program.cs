@@ -38,7 +38,7 @@ foreach (var item in productServices.GetProducts())
     Console.WriteLine();
 }
 
-productServices.UpdateProduct(3, "Condition", 5000, 1);
+productServices.UpdateProduct(3, "Condition", 5000, 4);
 foreach (var item in productServices.GetProducts())
 {
     Console.WriteLine($"Id {item.Id}\nName {item.Name}\nPrice {item.Price}\nQuantity {item.Quantity}");
@@ -54,9 +54,21 @@ foreach (var item in productServices.GetProducts())
     Console.WriteLine();
 }
 
-productServices.IncreaseStock(5);
-productServices.DecreaseStock(10);
+productServices.IncreaseStock(1, 5);
+foreach (var item in productServices.GetProducts())
+{
+    Console.WriteLine($"Id {item.Id}\nName {item.Name}\nPrice {item.Price}\nQuantity {item.Quantity}");
+    Console.WriteLine();
+    Console.WriteLine();
+}
 
+productServices.DecreaseStock(3, 1);
+foreach (var item in productServices.GetProducts())
+{
+    Console.WriteLine($"Id {item.Id}\nName {item.Name}\nPrice {item.Price}\nQuantity {item.Quantity}");
+    Console.WriteLine();
+    Console.WriteLine();
+}
 
 // using Domain;
 // using Domain.Entities;
